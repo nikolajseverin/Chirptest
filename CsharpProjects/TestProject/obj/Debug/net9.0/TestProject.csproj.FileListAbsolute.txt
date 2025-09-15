@@ -1,0 +1,15 @@
+/Users/severin/lortefag/CsharpProjects/TestProject/bin/Debug/net9.0/TestProject
+/Users/severin/lortefag/CsharpProjects/TestProject/bin/Debug/net9.0/TestProject.deps.json
+/Users/severin/lortefag/CsharpProjects/TestProject/bin/Debug/net9.0/TestProject.runtimeconfig.json
+/Users/severin/lortefag/CsharpProjects/TestProject/bin/Debug/net9.0/TestProject.dll
+/Users/severin/lortefag/CsharpProjects/TestProject/bin/Debug/net9.0/TestProject.pdb
+/Users/severin/lortefag/CsharpProjects/TestProject/obj/Debug/net9.0/TestProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/severin/lortefag/CsharpProjects/TestProject/obj/Debug/net9.0/TestProject.AssemblyInfoInputs.cache
+/Users/severin/lortefag/CsharpProjects/TestProject/obj/Debug/net9.0/TestProject.AssemblyInfo.cs
+/Users/severin/lortefag/CsharpProjects/TestProject/obj/Debug/net9.0/TestProject.csproj.CoreCompileInputs.cache
+/Users/severin/lortefag/CsharpProjects/TestProject/obj/Debug/net9.0/TestProject.sourcelink.json
+/Users/severin/lortefag/CsharpProjects/TestProject/obj/Debug/net9.0/TestProject.dll
+/Users/severin/lortefag/CsharpProjects/TestProject/obj/Debug/net9.0/refint/TestProject.dll
+/Users/severin/lortefag/CsharpProjects/TestProject/obj/Debug/net9.0/TestProject.pdb
+/Users/severin/lortefag/CsharpProjects/TestProject/obj/Debug/net9.0/TestProject.genruntimeconfig.cache
+/Users/severin/lortefag/CsharpProjects/TestProject/obj/Debug/net9.0/ref/TestProject.dll
