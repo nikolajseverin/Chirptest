@@ -3,10 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+*'
-
-permissions:
-  contents: write
+      - 'v[0-9]+.[0-9]+.[0-9]+*' # For eksempel: v1.0.0
 
 jobs:
   build-and-release:
@@ -22,45 +19,39 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: Chirp.CLI
-
+    
     - name: Build
       run: dotnet build --configuration Release --no-restore
-      working-directory: Chirp.CLI
       
     - name: Test
       run: dotnet test --configuration Release --no-build
-      working-directory: Chirp.CLI
 
     - name: Publish for Linux
       run: dotnet publish --configuration Release --runtime linux-x64 --output ./publish/linux-x64 --self-contained false /p:PublishSingleFile=true
-      working-directory: Chirp.CLI
 
     - name: Publish for Windows
       run: dotnet publish --configuration Release --runtime win-x64 --output ./publish/win-x64 --self-contained false /p:PublishSingleFile=true
-      working-directory: Chirp.CLI
 
     - name: Publish for macOS
       run: dotnet publish --configuration Release --runtime osx-x64 --output ./publish/osx-x64 --self-contained false /p:PublishSingleFile=true
-      working-directory: Chirp.CLI
     
     - name: Create Linux archive
       uses: actions/upload-artifact@v4
       with:
         name: chirp-linux-x64
         path: ./publish/linux-x64
-      working-directory: Chirp.CLI
+        retention-days: 7
 
     - name: Create Windows archive
       uses: actions/upload-artifact@v4
       with:
         name: chirp-win-x64
         path: ./publish/win-x64
-      working-directory: Chirp.CLI
+        retention-days: 7
         
     - name: Create macOS archive
       uses: actions/upload-artifact@v4
       with:
         name: chirp-osx-x64
         path: ./publish/osx-x64
-      working-directory: Chirp.CLI
+        retention-days: 7
