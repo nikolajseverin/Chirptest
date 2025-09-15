@@ -49,7 +49,6 @@ jobs:
       with:
         name: chirp-linux-x64
         path: ./publish/linux-x64
-        retention-days: 7
       working-directory: Chirp.CLI
 
     - name: Create Windows archive
@@ -57,7 +56,6 @@ jobs:
       with:
         name: chirp-win-x64
         path: ./publish/win-x64
-        retention-days: 7
       working-directory: Chirp.CLI
         
     - name: Create macOS archive
@@ -65,5 +63,4 @@ jobs:
       with:
         name: chirp-osx-x64
         path: ./publish/osx-x64
-        retention-days: 7
       working-directory: Chirp.CLI
